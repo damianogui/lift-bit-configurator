@@ -1,4 +1,5 @@
 /* @pjs font="Decima.otf"; */
+//sorry in advance for the spaghettiness of this part...
 
 int boxX=50;
 int boxY=50;
@@ -19,7 +20,7 @@ if (menu){
 rectMode(CORNER);
 fill(0,80);
 noStroke();
-rect(boxX,0,300,window.innerHeight);
+rect(boxX,0,300,window.innerHeight); // js-only. Change to 'height' for Java
 image(menu_close,boxX+30,25,38,38);
 //TITLE
 fill(255);

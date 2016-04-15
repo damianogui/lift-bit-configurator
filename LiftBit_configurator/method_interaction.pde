@@ -49,7 +49,7 @@ void keyPressed() {
   
   if (key == 's'){
   if (writePNG == true){
-  //saveTable();
+  //saveTable(); // Use this to save the configuration as a csv table. Java-only.
   saveFrame("myConfiguration.png");
   } 
   writePNG =! writePNG;

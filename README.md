@@ -28,7 +28,7 @@ The sketch can be still refined in many ways: feel free to comment, fork, change
 ## Credits
 Lift-Bit is a project by [Carlo Ratti Associati](http://www.carloratti.com), developed with the support of [Vitra](https://www.vitra.com) for the [“ROOMS. Novel living concepts”](http://www.salonemilano.it/en/manifestazioni/eventi-appuntamenti/lista-eventi-del-salone/2016/stanze-nuovi-paesaggi-domestici.html) exhibition organised by [Salone del Mobile – Milano](http://www.salonemilano.it/en/) within the framework of the XXI Triennale. Engineering and interaction design by [Opendot](http://www.opendotlab.it/). More information is available at [lift-bit.com](http://lift-bit.com).
 ## Thanks
-To the [Processing](https://processing.org) and [Processing.js](http://processingjs.org) communities for answering all my questions without me even asking. To [Quattrolinee](http://www.quattrolinee.it) for the graphic treatment of the UI.
+To the [Processing](https://processing.org) and [Processing.js](http://processingjs.org) communities for answering all my questions without me even asking. To [Quattrolinee](http://www.quattrolinee.it) for the graphic treatment of the UI. To [Gildas P.](http://www.gildasp.fr/#/accueil/) for [this useful Processing.js extension](http://playingwithpixels.gildasp.fr/exemples/jprocessingjs/).
 To Gillian Crampton Smith, Philip Tabor, Till Nagel and Steffen Klaue for introducing me to Processing.
 
 
