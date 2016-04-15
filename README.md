@@ -18,6 +18,7 @@ The interface should be quite self-explanatory. What’s not written is that you
 - **h** - make a hill with selected Lift-Bit as top
 - **v** - make a valley with selected Lift-Bit as bottom
 - **c** - to delete the selected Lift-Bit as an alternative to **BACKSPACE** which tends to bring to the previous page in some browsers.
+
 The ‘range’ defines the number of Lift-Bits surrounding the selected one that are influenced by some of the methods. It has been set to 3 for simplicity but used to be freely settable in the original version - just uncomment that part to try.
 ## Outputs
 Press **’s’** two times and the sketch will try to save a screenshot of the current configuration as a .png image URI, opening it in a new browser tab. This could take some time depending on your browser and connection speed. If you switch to Java mode, you can also export your configuration as a csv file: the method **saveTable()** is just commented on top of **saveFrame()** in the **method_interaction** tab, while **searchFile()** can be used to load it. 
