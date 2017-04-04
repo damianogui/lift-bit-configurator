@@ -1,4 +1,5 @@
 void mouseClicked() { 
+  if (mouseButton == LEFT){
   if (hoverCol !=-1 && hoverRow !=-1 && mouseX > Xmargin){ //---------------------------------------place or remove a pin
   
       if(pins[hoverCol][hoverRow].present == false){
@@ -23,6 +24,12 @@ void mouseClicked() {
   if (mouseX>boxX && mouseX<boxX+60 && mouseY>boxY-30 && mouseY < boxY+60){ //---------------------------------------open and close menu
     menu = !menu;
   }
+}
+  //---- delete with right click
+  
+   if (mouseButton == RIGHT){
+    pins[hoverCol][hoverRow].present = false;
+}
 }
 
 void mouseDragged(){
@@ -49,7 +56,7 @@ void keyPressed() {
   
   if (key == 's'){
   if (writePNG == true){
-  //saveTable(); // Use this to save the configuration as a csv table. Java-only.
+  //saveTable();
   saveFrame("myConfiguration.png");
   } 
   writePNG =! writePNG;
@@ -59,7 +66,7 @@ void keyPressed() {
   writePNG = true;
   }
   
-  if (keyCode == BACKSPACE || keyCode == DELETE || key == 'c'){
+  if (keyCode == BACKSPACE || keyCode == DELETE){
     if(selectedCol != -1 && selectedRow  != -1){
     pins[selectedCol][selectedRow].elevation=0;
     pins[selectedCol][selectedRow].Pelevation=0;

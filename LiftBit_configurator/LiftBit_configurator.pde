@@ -8,7 +8,7 @@ float pinSizeY = 215;
 float pinSpeed = 2;
 float perspShift;
 float maxElevation= 100;
-String selectedColor = "green";
+String selectedColor = "blue";
 int selectedCol;
 int selectedRow;
 int hoverCol;
@@ -29,6 +29,7 @@ PImage cushionInRange;
 PImage check;
 PImage menu_open;
 PImage menu_close;
+PImage mobile_placeholder;
 
 //---------------------------------METHODS
 boolean dragging;
@@ -47,8 +48,8 @@ float Xdistance = radius*1.54; //horizontal distance between the pins
 float Ydistance = radius/3; // vertical distance between the pins
 float shift = radius*0.8; // shift of any odd line to match the exagon grid
 //MARGINS TO SET THE GRID AT THE CENTRE OF THE SCREEN
-float Xmargin = window.innerWidth/4; //---------------for running in js
-//float Xmargin = 400; //-----------for running in java
+float Xmargin = window.innerWidth/4;
+float Xmargin = 400;
 float Ymargin = 200;
 
 //----------------------------------CONFIGURATION
@@ -67,7 +68,7 @@ Boolean writePNG = false;
 void setup() {
 
   //size(1680,820, P2D); //-----------for running in java
-  size(window.innerWidth, window.innerHeight, P2D); //---------------for running in js
+  size(window.innerWidth, window.innerHeight, P2D); //---------------or running in js
   rectMode(CENTER);
   imageMode(CENTER);
   
@@ -96,9 +97,10 @@ void setup() {
   check = loadImage("check.png");
   menu_open = loadImage("menu_open.png");
   menu_close = loadImage("menu_close.png");
+  mobile_placeholder = loadImage("mobile_placeholder.png");
 
   //CONFIGURATIONS
-  //loadTable(); //use this to create a new table to save a configuration to. Only works in Java mode
+  //loadTable();
 
   //CREATE ALL THE PINS!!!
   for (int row = 0; row < rows; row++) {
@@ -113,7 +115,8 @@ void setup() {
   }
   
   //Read all the configurations in the Data folder
-  //searchFiles();  
+  //searchFiles();
+  
   //installation(); //SET MOVABLE/PRESENT PINS
   //configuration = loadTable("newConfigurations/00 - Blank.csv");
   //readTable (); //SET ALL TO ELEVATION 0
@@ -184,6 +187,12 @@ if (writePNG == false){
 
 if (writePNG == true){
   saveFrame("myConfiguration.png");
+}
+
+//-------mobile placeholder
+
+if (window.innerWidth < 743){
+  image(mobile_placeholder,width/2,height/2);
 }
   
 }

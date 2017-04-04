@@ -1,5 +1,3 @@
-// I know this is crazy, but I couldn't make it work with external tables...
-
 int[][] stool = {{0,0,0,0,0,0,0,0,0,0},
 {0,0,0,0,0,0,0,0,0,0},
 {0,0,0,0,0,0,0,0,0,0},

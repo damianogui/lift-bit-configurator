@@ -1,5 +1,4 @@
 /* @pjs font="Decima.otf"; */
-//sorry in advance for the spaghettiness of this part...
 
 int boxX=50;
 int boxY=50;
@@ -20,7 +19,7 @@ if (menu){
 rectMode(CORNER);
 fill(0,80);
 noStroke();
-rect(boxX,0,300,window.innerHeight); // js-only. Change to 'height' for Java
+rect(boxX,0,300,window.innerHeight);
 image(menu_close,boxX+30,25,38,38);
 //TITLE
 fill(255);
@@ -37,7 +36,7 @@ noStroke();
 //QUICK INSTRUCTIONS
 textSize(12);
 text("Click anywhere to add a Lift-bit", boxY+boxMarginX, boxX+boxMarginY*2);
-text("Press BACKSPACE to remove", boxY+boxMarginX, boxX+boxMarginY*2.5);
+text("Right click to remove", boxY+boxMarginX, boxX+boxMarginY*2.5);
 text("Hold and drag to change height", boxY+boxMarginX, boxX+boxMarginY*3);
 
 //LINE
